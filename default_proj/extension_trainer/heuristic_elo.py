@@ -1,4 +1,4 @@
-"""Fast input-only problem Elo initialization for Countdown tasks."""
+"""Input-only problem Elo initialization for Countdown tasks."""
 
 from __future__ import annotations
 

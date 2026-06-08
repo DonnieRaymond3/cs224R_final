@@ -38,7 +38,6 @@ import wandb
 from argparse import ArgumentParser
 import uuid
 import shutil
-# os.environ['WANDB_MODE'] = 'offline'
 
 class RLOOTrainer:
     """Coordinates online sampling, reward computation, and policy updates."""

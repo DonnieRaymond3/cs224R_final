@@ -1,16 +1,5 @@
 #!/bin/bash
 
-# Launch the Elo-curriculum extension trainer on Modal.
-# Required before running:
-#   export WANDB_API_KEY=...
-#   export HF_TOKEN=...
-#   export MODEL_NAME=path-or-hf-repo-of-initial-policy
-#   export DATASET_NAME=your-rloo-dataset
-# Useful optional Modal overrides:
-#   export MODAL_GPU=H100!
-#   export MODAL_VOLUME_NAME=default-proj-training
-#   export MODAL_TIMEOUT_SECONDS=86400  # 24 hours
-
 set -euo pipefail
 
 export WANDB__SERVICE_WAIT="${WANDB__SERVICE_WAIT:-300}"

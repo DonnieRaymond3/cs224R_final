@@ -1,18 +1,8 @@
 #!/bin/bash
-# Ensure conda is available (optional - remove if not using conda)
-# eval "$(conda shell.bash hook)"
-# conda activate default_proj
-
-# Set environment variables (set these in your shell or .env before running)
-# export WANDB_API_KEY=your_wandb_api_key
-# export WANDB_USERNAME=your_username
-# export WANDB_USER_EMAIL=your_email
 export WANDB__SERVICE_WAIT=300
-# export WANDB_ENTITY=your_entity
 export HF_DATASETS_CACHE=${HF_DATASETS_CACHE:-$HOME/.cache/huggingface}
-# export HF_TOKEN=your_hf_token  # Required for gated datasets
 
-set -e  # Exit immediately if a command exits with a non-zero status
+set -e
 
 lrs=(1e-5)
 num_lrs=${#lrs[@]}
